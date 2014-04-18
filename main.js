@@ -4,7 +4,9 @@ var getName = function(obj) {
 }
 
 // #2
-
+var totalLetters = function(arr){
+	return arr.join('').length;
+}
 // #3
 
 // #4
