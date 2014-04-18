@@ -1,8 +1,8 @@
 // #1
 describe("getName", function() {
-    it("takes a single object argument and returns the value of the 'name' property of the given object", function() {
-        expect(getName({ name: 'Luisa', age: 25 })).toEqual('Luisa');
-    });
+	it("takes a single object argument and returns the value of the 'name' property of the given object", function() {
+		expect(getName({ name: 'Luisa', age: 25 })).toEqual('Luisa');
+	});
 });
 
 // #2
