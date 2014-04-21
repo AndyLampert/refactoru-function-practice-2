@@ -2,6 +2,7 @@
 describe("getName", function() {
 	it("takes a single object argument and returns the value of the 'name' property of the given object", function() {
 		expect(getName({ name: 'Luisa', age: 25 })).toEqual('Luisa');
+		expect(getName({ age: 25 })).toEqual(undefined);
 	});
 });
 
@@ -16,7 +17,8 @@ describe("totalLetters", function() {
 // #3
 describe("keyValue", function(){
 	it("takes two arguments and returns an object with a key of the first argument and the value of the second argument", function() {
-		expect(keyValue('city', 'Denver')).toEqual('{city: "Denver"}');
+		expect(keyValue('city', 'Denver')).toEqual({city: "Denver"});
+		expect(keyValue('name', 'andy')).toEqual({name: "andy"});
 	});
 });
 

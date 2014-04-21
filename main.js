@@ -7,33 +7,36 @@ var getName = function(obj) {
 var totalLetters = function(arr){
 	return arr.join('').length;
 }
-// #3
+
+// #3  ???
 var keyValue = function(key, value){
-	 
+	// start by creating new instance of an object
+	var obj = {};
+	obj[key] = value;
+	// return o at the end
+	return obj;
 }
 
 // #4
 var negativeIndex = function(arr, negNum){
+	return arr.length - negNum
+}
 
-} 
 // #5
 var removeM = function(str){
-	// works if there is only 1 m
-	// if(str.indexOf('m') > -1){
-	// 	var noMStr = str.replace('m','');
-	// 	return noMStr;
-	// } else {
-	// 	return str;
-	// }
-	
-
 	// attempted solution for multiple m's
 	var newArr = str.split('');
 	for (var i=0; i<newArr.length; i++){
 		if (newArr[i] === 'm') {
-			newArr.splice[i];
+			newArr.splice(i, 1);
+			// think about how does i have to
+			// change after removing an item?
 		}
 	}
+
+	// another option is to go through the array 
+	// and only keep items I want
+
 	// change string to array
 	// for loop
 	// if array value === 'm', remove it
@@ -46,11 +49,41 @@ var removeM = function(str){
 
 }
 // #6
+var printObject = function(obj){
+	// var key = obj.key;
+	// var value = obj.value;
+	// console.log(key + "is " +  value);
+}
 
 // #7
+var vowels = function(str){
+	var newStr = str.split('');
+	var outputStr = [];
+	for(var i=0; i<newStr.length; i++)  {
+		if(newStr[i] !== 'm') {
+			outputStr.push(str[i]);
+		}
+	}
+}
 
 // #8
+var twins = function(){
+
+}
 
 // #9
+var or = function(booleanArr) {
+	for(var i=0; i<booleanArr.length; i++){
+	}
+}
 
 // #10
+var unique = function(arr) {
+	var arrOfStrings = arr.split();
+	
+}
+
+
+
+
+
