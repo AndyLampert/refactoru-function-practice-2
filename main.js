@@ -19,12 +19,11 @@ var keyValue = function(key, value){
 
 // #4
 var negativeIndex = function(arr, negNum){
-	return arr.length - negNum
+	return arr[arr.length + negNum];
 }
 
 // #5
 var removeM = function(str){
-	// attempted solution for multiple m's
 	var newArr = str.split('');
 	for (var i=0; i<newArr.length; i++){
 		if (newArr[i] === 'm') {
@@ -33,21 +32,11 @@ var removeM = function(str){
 			// change after removing an item?
 		}
 	}
-
+	return str;
 	// another option is to go through the array 
 	// and only keep items I want
-
-	// change string to array
-	// for loop
-	// if array value === 'm', remove it
-	// end loop
-	// put back into a string
-	// return new string
-	
-
-
-
 }
+
 // #6
 var printObject = function(obj){
 	// var key = obj.key;
