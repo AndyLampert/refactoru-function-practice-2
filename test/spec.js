@@ -39,11 +39,11 @@ describe("removeM", function() {
 });
 
 // #6
-describe("printObject", function() {
-	it("takes a single object argument and console.log's each key-value pair in the format key is value on separate lines", function(){
-		expect(printObject({ a: 10, b: 20, c: 30 })).toEqual('a is 10, b is 20, c is 30');
-	});
-});
+// describe("printObject", function() {
+// 	it("takes a single object argument and console.log's each key-value pair in the format key is value on separate lines", function(){
+// 		expect(printObject({ a: 10, b: 20, c: 30 })).toEqual('a is 10, b is 20, c is 30');
+// 	});
+// });
 
 // #7
 describe("vowels", function() {

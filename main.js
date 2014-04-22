@@ -39,9 +39,10 @@ var removeM = function(str){
 
 // #6
 var printObject = function(obj){
-	// var key = obj.key;
-	// var value = obj.value;
-	// console.log(key + "is " +  value);
+	for(var key in obj){
+		var value = obj[key];
+		console.log(key + " is " +  value);	
+	}
 }
 
 // #7
@@ -49,27 +50,43 @@ var vowels = function(str){
 	var newStr = str.split('');
 	var outputStr = [];
 	for(var i=0; i<newStr.length; i++)  {
-		if(newStr[i] !== 'm') {
+		if(newStr[i] === 'a' || newStr[i] === 'e' || newStr[i] === 'i' || newStr[i] === 'o' || newStr[i] === 'u') {
 			outputStr.push(str[i]);
 		}
 	}
+	return outputStr;
 }
 
 // #8
-var twins = function(){
-
+var twins = function(arr){
+	console.log('start');
+	for(var i=0;i<arr.length;i+=2) {
+		console.log(arr[i], arr[i+1]);
+		if(arr[i] !== arr[i+1]) {
+			return false;
+		} 
+	}
+	return true;
 }
 
 // #9
 var or = function(booleanArr) {
 	for(var i=0; i<booleanArr.length; i++){
+		if(booleanArr[i] === true){
+			return true;
+		}
 	}
+	return false;
 }
 
 // #10
 var unique = function(arr) {
 	var arrOfStrings = arr.split();
-	
+	for(var i=0;i<arrOfStrings.length;i++) {
+		if(indexOf[i] > 1){
+
+		} // find if there are more than one i ???
+	}
 }
 
 
