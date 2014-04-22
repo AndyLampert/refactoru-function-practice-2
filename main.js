@@ -28,13 +28,9 @@ var removeM = function(str){
 	for (var i=0; i<newArr.length; i++){
 		if (newArr[i] === 'm') {
 			newArr.splice(i, 1);
-			// think about how does i have to
-			// change after removing an item?
 		}
 	}
-	return str;
-	// another option is to go through the array 
-	// and only keep items I want
+	return newArr.join('');
 }
 
 // #6
@@ -80,16 +76,25 @@ var or = function(booleanArr) {
 }
 
 // #10
-var unique = function(arr) {
-	var arrOfStrings = arr.split();
-	for(var i=0;i<arrOfStrings.length;i++) {
-		if(indexOf[i] > 1){
-
-		} // find if there are more than one i ???
+// helper function
+var itemCount = function(arr,value) {
+	var count = 0;
+	for(var i=0;i<arr.length;i++){
+		// if the current item === value
+		if(arr[i] === value) {
+			count++;
+		}
 	}
+	return count;
 }
 
-
-
-
-
+var unique = function(arr) {
+	var newArr = [];
+	// count the # of times that a given value appears in an array
+	for(var i=0;i<arr.length;i++) {
+		if(itemCount(newArr,arr[i]) === 0) {
+			newArr.push(arr[i]);
+		}
+	}
+	return newArr;
+}
